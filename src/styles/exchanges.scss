@@ -75,8 +75,8 @@
   .pagination {
     display: flex;
     width: 100%;
-    //overflow-x: auto;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    //flex-wrap: wrap;
 
     button {
       padding: 10px;
@@ -86,6 +86,18 @@
       color: white;
       border: none;
       overflow: hidden;
+      width: 2rem;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      font-weight: bold;
+
+      &:hover {
+        background-color: rgb(193, 189, 189);
+        color: #000;
+      }
     }
   }
 }
