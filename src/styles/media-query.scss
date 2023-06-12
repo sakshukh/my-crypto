@@ -1,0 +1,33 @@
+@media screen and (max-width: 900px) {
+  .coin-detail {
+    .days {
+      flex-direction: column;
+
+      button {
+        margin: 10px 0px;
+      }
+    }
+
+    main {
+      padding: 2rem 10px;
+    }
+
+    .market-data {
+      margin: 10px;
+    }
+  }
+
+  footer {
+    padding: 2rem;
+    height: 25vh;
+    flex-direction: column;
+    height: 35vh;
+
+    > div {
+      align-items: center;
+
+      > span {
+      }
+    }
+  }
+}

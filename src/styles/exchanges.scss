@@ -1,0 +1,91 @@
+@import "colors.scss";
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 5rem;
+  background-color: #ccc;
+  padding: 2rem 3rem;
+  //   font: 500 1.2rem $text2;
+  //   font-style: $text2;
+  //   flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+
+    border-radius: 7px;
+    color: #444;
+    background-color: white;
+    box-shadow: 0.1px 0.1px 0.5px 0.5px rgb(218, 217, 217);
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      //   background-color: #ccc;
+      box-shadow: 0 0 40px lighten(#000, 60%);
+      transition: box-shadow 0.2s ease-in-out;
+    }
+
+    > img {
+      width: 3rem;
+      height: 3rem;
+      margin: 10px 10px;
+    }
+
+    > h5 {
+      font-style: $text2;
+    }
+  }
+
+  .shimmer {
+    background-color: rgb(200, 199, 199);
+  }
+
+  .radio {
+    width: 100%;
+    margin: 2rem 36%;
+
+    > input {
+      margin-left: 12px;
+      margin-right: 8px;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    width: 100%;
+    //overflow-x: auto;
+    flex-wrap: wrap;
+
+    button {
+      padding: 10px;
+      margin: 5px;
+      background-color: #444;
+      font-size: large;
+      color: white;
+      border: none;
+      overflow: hidden;
+    }
+  }
+}

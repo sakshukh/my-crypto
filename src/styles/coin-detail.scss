@@ -1,0 +1,118 @@
+@import "colors";
+
+.coin-detail {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    //margin: 1rem 3rem;
+  }
+  .chart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .days {
+    display: flex;
+    width: 100%;
+    padding: 0 3rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    button {
+      padding: 1rem 2rem;
+      font: 900 1rem $text1;
+      background-color: $dark;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      margin: 0 1rem;
+
+      &:hover {
+        filter: invert(1);
+      }
+    }
+  }
+  .radio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+
+    label {
+      margin-left: 0.3rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .date {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    font-size: small;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .market-data {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+
+    .title {
+      text-transform: uppercase;
+      font-size: medium;
+      font-style: $text2;
+      font-weight: bold;
+    }
+
+    .value {
+      font-size: small;
+    }
+  }
+
+  .upDown {
+    display: flex;
+    align-items: center;
+    color: rgb(85, 79, 79);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+  }
+
+  .name {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+
+    color: red;
+    margin: 1rem 0;
+  }
+
+  .rank {
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: medium;
+
+    &:hover {
+      filter: invert(1);
+    }
+  }
+
+  main {
+    width: 100%;
+    padding: 2rem 15rem;
+  }
+}

@@ -1,0 +1,31 @@
+@import "colors.scss";
+
+nav {
+  background-color: $black;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  color: rgb(173, 125, 5);
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  font: 400 0.7rem $text1;
+  scroll-behavior: smooth;
+
+  > div {
+    color: rgb(173, 125, 5);
+    margin: 1rem;
+    text-decoration: none;
+
+    > a {
+      color: goldenrod;
+      font-size: large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+      &:hover {
+        color: $first;
+      }
+    }
+  }
+}
